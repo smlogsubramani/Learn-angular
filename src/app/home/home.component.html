@@ -1,0 +1,27 @@
+<p>Welcome to the home page</p>
+<div class="container">
+<p> show your love by clicking <span (click)="ClickCount()"><h2>Love</h2></span>{{clickcounter}} times</p>
+</div>
+<button onclick="this.innerHTML=Date()">The time is</button>
+<button onclick="document.getElementById('demo').innerHTML = mams()">The time is?</button>
+<p id="demo"></p>
+
+<!--data binding-->
+<input type="text" [(ngModel)]="name">
+
+<strong>the name you just said is {{name}}</strong>
+
+<!--ng template-->
+<br>
+<div class="container" [ngStyle]="{
+'background-color':clickcounter>4 ? 'yellow':'red',
+'border'          :clickcounter>4 ? '12px solid blue':'none'
+}">
+<ng-template [ngIf]="clickcounter < 5" [ngIfElse]="none">
+    the click count is less than 5
+</ng-template>
+<ng-template #none>
+    <p> the click counter is greater than 5</p>
+</ng-template>
+
+</div>
