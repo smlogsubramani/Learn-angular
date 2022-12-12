@@ -1,0 +1,24 @@
+notes
+
+Soundnode
+Notepad application
+Angular Hello World project
+Angular Bare Bones project
+Data binding in forms
+Angular projects on local storage
+Customer service manager
+Admin Panel Framework
+AngularJS in Patterns
+Standard chat application
+Electronic musical instrument
+Angular 2 chess game
+URL shortener
+Interactive tables and grids in Angular
+AngularJS Google Maps (AGM)
+Angular CLI
+Storybook
+AngularSpree
+Compodoc
+NGX-Admin
+NGX-charts
+NGRX
