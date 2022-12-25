@@ -1,27 +1,53 @@
-<p>Welcome to the home page</p>
-<div class="container">
-<p> show your love by clicking <span (click)="ClickCount()"><h2>Love</h2></span>{{clickcounter}} times</p>
-</div>
-<button onclick="this.innerHTML=Date()">The time is</button>
-<button onclick="document.getElementById('demo').innerHTML = mams()">The time is?</button>
-<p id="demo"></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Data entry job Form
+        </h1>
+        <div class="space"></div>
+        <!--forms filling-->
+        <form action="" method="get">
+            <div class="row">
+                <div class="col">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="" [disabled]="isDisabled">
+                </div>
+                
+                <div class="col">
+                    <label for="address">Address:</label>
+                    <input type="text" [(ngModel)] = "title">
+                    <h2>{{title}}</h2>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="row">   
+                <div class="col">
+                    <label for="phonenumber">phone:</label>
+                    <input type="number" placeholder="970987689">
+                </div>
 
-<!--data binding-->
-<input type="text" [(ngModel)]="name">
+                <div class="col">
+                    <label for="pincode">Pincode:</label>
+                    <input type="number" placeholder="660-898">
+                </div>
+            </div> 
+            <div class="space"></div>
+            <!-- event binding -->
+            <div class="row">
+                <div class="col">
+                    <button (click)="onclick()">submit</button>
+                </div>
+            </div>
+        </form>
 
-<strong>the name you just said is {{name}}</strong>
+    </div>
 
-<!--ng template-->
-<br>
-<div class="container" [ngStyle]="{
-'background-color':clickcounter>4 ? 'yellow':'red',
-'border'          :clickcounter>4 ? '12px solid blue':'none'
-}">
-<ng-template [ngIf]="clickcounter < 5" [ngIfElse]="none">
-    the click count is less than 5
-</ng-template>
-<ng-template #none>
-    <p> the click counter is greater than 5</p>
-</ng-template>
-
-</div>
+    
+</body>
+</html>

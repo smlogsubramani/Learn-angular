@@ -7,17 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  clickcounter: number =0;
-  name:string=""
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  title : string ="";
+  constructor(){}
+
+  //oneway-databinding or property binding
+  isDisabled : boolean = true;
+
+  //eventbinding
+  onclick(){
+    console.log("submit button is pressed")
   }
-   ClickCount(){
-      this.clickcounter +=1;
-    }
-  
-   
 
 }
 
