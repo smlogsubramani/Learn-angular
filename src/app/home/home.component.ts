@@ -1,15 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: '.app-home',
+  //inline template and styles example code
+  template:`<div>
+               Inline template
+            </div>`,
+  styles: [
+      `div{
+         color:red;
+      }`]
 })
-export class HomeComponent implements OnInit {
 
+
+export class HomeComponent implements OnInit {
+  title: string ="Data entry";
   ngOnInit(): void {}
 
-  title : string ="";
+
   constructor(){}
 
   //oneway-databinding or property binding

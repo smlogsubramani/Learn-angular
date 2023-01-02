@@ -5,12 +5,14 @@ import { AppRoutingModule,RoutingComponents } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FormsComponent } from './forms/forms.component';
+import { SinglepagetryComponent } from './singlepagetry/singlepagetry.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RoutingComponents,
-    FormsComponent
+    FormsComponent,
+    SinglepagetryComponent
   ],
   imports: [
     BrowserModule,

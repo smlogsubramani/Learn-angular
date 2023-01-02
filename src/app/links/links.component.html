@@ -1,2 +1,35 @@
+<!-- interpollation -->
+<p>
+    hi this is the example of interpollation {{render}}
+</p>
 
+<!--rendering the method-->
 
+<p>
+    {{greetuser()}}
+</p>
+
+<p>
+    {{siteurl}}
+</p>
+
+<!--property binding-->
+
+<input [id]="myid" value="lol"type="text">
+<input [disabled]="isDisabled" type="text" value="lol">
+<input bind-disabled="isDisabled" type="text" value="lol">
+
+<<!--class binding property-->
+<h2 [class]="change">
+hello this is loga in green using class binding property
+</h2>
+
+<!--conditional class bindind getting renderd from the link.component.css-->
+<h2 [class.loga-danger]="hasError">hello this is conditional class binding </h2>
+
+<!--conditional style binding-->
+<h2 [style.color]=" hasError? 'red':'green'"></h2>
+
+<!--event binding-->
+<button (click)="onclick()">Greet the user</button>
+{{greetingusers}}

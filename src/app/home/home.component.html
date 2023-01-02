@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<!--this page wont work because the inline template is activated in the component.ts file in order to 
+make this work change the template to templateUrl: './home.component.html', and same for the style too-->
+    
     <div class="container">
         <h1>
-            Data entry job Form
+            
+            {{title}} entry job Form
         </h1>
         <div class="space"></div>
         <!--forms filling-->
@@ -18,7 +22,6 @@
                     <label for="name">Name:</label>
                     <input type="text" placeholder="" [disabled]="isDisabled">
                 </div>
-                
                 <div class="col">
                     <label for="address">Address:</label>
                     <input type="text" [(ngModel)] = "title">
@@ -45,7 +48,8 @@
                 </div>
             </div>
         </form>
-
+        <!-- check program -->
+        
     </div>
 
     

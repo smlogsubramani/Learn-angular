@@ -5,12 +5,14 @@ import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {LinksComponent} from './links/links.component';
 import { FormsComponent } from './forms/forms.component';
+import { SinglepagetryComponent } from './singlepagetry/singlepagetry.component';
 
 //route paths
 const routes: Routes = [
  { path:'',component:HomeComponent},
  { path:'Links',component:LinksComponent},
- { path:'forms',component:FormsComponent}
+ { path:'forms',component:FormsComponent},
+ {path:'singlepagetry',component:SinglepagetryComponent}
 ];
 
 
@@ -22,4 +24,4 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 //To avoid multiple imports in the app-module.ts
-export const RoutingComponents =[HomeComponent,LinksComponent,FormsComponent]
+export const RoutingComponents =[HomeComponent,LinksComponent,FormsComponent,SinglepagetryComponent]
