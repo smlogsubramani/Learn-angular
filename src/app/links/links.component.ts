@@ -15,6 +15,8 @@ export class LinksComponent implements OnInit {
  public change = "loga";
  public hasError= true;
  public greetingusers="";
+ public condition = "false"
+
   constructor() { }
 
   ngOnInit(): void {
@@ -26,7 +28,9 @@ export class LinksComponent implements OnInit {
   onclick(){
     this.greetingusers="welcome to the learn-anguilar-module"
   }
-
+  logMessage(value: any){
+    console.log(value);
+  }
 }
 
 

@@ -30,6 +30,15 @@ ng new <project-name>, where <project-name>
 
 ng generate component <component-name>
 
+Learnings
+
+1] interpolation
+2] binding
+3] property binding
+4] event binding
+5] template reference variable
+6] ngif and else
+
 
 
 

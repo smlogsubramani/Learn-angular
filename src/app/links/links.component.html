@@ -32,4 +32,22 @@ hello this is loga in green using class binding property
 
 <!--event binding-->
 <button (click)="onclick()">Greet the user</button>
+<button (click)="greetingusers='welcome home '">Greet the user</button>
 {{greetingusers}}
+
+<!--template reference variable-->
+<input #myInput type="text">
+<button (click)="logMessage(myInput.value)">log</button>
+
+<!--ngif and else-->
+
+<div *ngIf="condition">
+
+<ng-template [ngIf]="condition">
+    this is  a template 
+</ng-template>
+<ng-template [ngElse]="condition">
+    hidden 
+</ng-template>
+</div> 
+
