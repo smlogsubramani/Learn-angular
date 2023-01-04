@@ -37,7 +37,8 @@ Learnings
 3] property binding
 4] event binding
 5] template reference variable
-6] ngif and else
+6] ngif and else , switch , for
+7] pipes
 
 
 

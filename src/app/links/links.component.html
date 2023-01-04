@@ -41,13 +41,36 @@ hello this is loga in green using class binding property
 
 <!--ngif and else-->
 
-<div *ngIf="condition">
+<!-- <div *ngIf="false">display content
+<div *ngIf="''">dont display content</div> 
+</div> -->
 
-<ng-template [ngIf]="condition">
-    this is  a template 
-</ng-template>
-<ng-template [ngElse]="condition">
-    hidden 
-</ng-template>
-</div> 
+<!--swtich case-->
+<div [ngSwitch]="color">
+    <div *ngSwitchCase= true>hi</div>
+    <div *ngSwitchCase= false>bye</div>
+</div>
 
+<div [ngSwitch]="notboolean">
+    <div *ngSwitchCase= "'loga'">boy</div>
+    <div *ngSwitchCase= "'priya'">girl</div>
+    <div *ngSwitchDefault>pick again</div>
+</div>
+
+
+<!--ngfor-->
+
+<div *ngFor="let name of names">
+    <h5>{{name}}</h5>
+</div>
+
+<!--parent data interaction-->
+<!-- 
+<h4>{{"hellow"+parentData}}</h4> -->
+
+<!--pipes-->
+<h2>{{date}}</h2>
+<h2>{{date | date}}</h2>
+<h2>{{date | date : 'short'}}</h2>
+<h2>{{date | date : 'shortDate'}}</h2>
+<h2>{{date | date : 'shortTime'}}</h2>

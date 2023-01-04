@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-links',
@@ -15,7 +15,11 @@ export class LinksComponent implements OnInit {
  public change = "loga";
  public hasError= true;
  public greetingusers="";
- public condition = "false"
+ public color = false;
+ public notboolean="loga";
+ public names=['loga','priya','navin','kaushik','vaishu'];
+//  @Input() public parentData:any;
+ public date = new Date();
 
   constructor() { }
 
