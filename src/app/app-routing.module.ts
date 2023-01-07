@@ -13,7 +13,7 @@ const routes: Routes = [
  { path:'Links',component:LinksComponent},
  { path:'forms',component:FormsComponent},
  {path:'singlepagetry',component:SinglepagetryComponent}
-];
+]; 
 
 
 //default imports and exports for the appmodule.ts

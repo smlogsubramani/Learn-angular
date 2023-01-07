@@ -35,6 +35,11 @@ export class LinksComponent implements OnInit {
   logMessage(value: any){
     console.log(value);
   }
+
+  //try
+  logmessage(value:any){
+    console.log(value);
+  }
 }
 
 

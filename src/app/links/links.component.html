@@ -8,7 +8,7 @@
 <p>
     {{greetuser()}}
 </p>
-
+ 
 <p>
     {{siteurl}}
 </p>
@@ -74,3 +74,11 @@ hello this is loga in green using class binding property
 <h2>{{date | date : 'short'}}</h2>
 <h2>{{date | date : 'shortDate'}}</h2>
 <h2>{{date | date : 'shortTime'}}</h2>
+
+
+<!--try-->
+<form action="" #input="ngForm">
+    <input type="text" placeholder="name" name="name" ngModel>
+    <input type="text" placeholder="feedback" name="feedback" ngModel>
+    <button (click)="logmessage(input.value)">log</button>
+</form>
